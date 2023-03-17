@@ -171,10 +171,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 1771146194}
+  myArmy: {fileID: 0}
 --- !u!114 &2834602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,10 +262,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 2056333208}
+  myArmy: {fileID: 0}
 --- !u!114 &5895545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -550,6 +550,8 @@ MonoBehaviour:
   monthIndex: 6
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &40992068
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,6 +716,8 @@ MonoBehaviour:
   monthIndex: 10
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &50067232
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,6 +808,8 @@ MonoBehaviour:
   monthIndex: 8
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &67071495
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,10 +934,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 1
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 1771146194}
+  myArmy: {fileID: 0}
 --- !u!114 &103061741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1059,6 +1065,8 @@ MonoBehaviour:
   monthIndex: 9
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &121503952
 GameObject:
   m_ObjectHideFlags: 0
@@ -1109,10 +1117,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 2056333208}
+  myArmy: {fileID: 0}
 --- !u!114 &121503955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1314,6 +1322,8 @@ MonoBehaviour:
   monthIndex: 1
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &138169215
 GameObject:
   m_ObjectHideFlags: 0
@@ -1478,6 +1488,8 @@ MonoBehaviour:
   monthIndex: 11
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &243098387
 GameObject:
   m_ObjectHideFlags: 0
@@ -1602,10 +1614,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 2056333208}
+  myArmy: {fileID: 0}
 --- !u!114 &248085114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1693,10 +1705,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 2056333208}
+  myArmy: {fileID: 0}
 --- !u!114 &262635035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1784,10 +1796,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 1
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 1771146194}
+  myArmy: {fileID: 0}
 --- !u!114 &308004186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2096,6 +2108,8 @@ MonoBehaviour:
   monthIndex: 2
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &386346538
 GameObject:
   m_ObjectHideFlags: 0
@@ -2186,6 +2200,8 @@ MonoBehaviour:
   monthIndex: 12
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &389568121
 GameObject:
   m_ObjectHideFlags: 0
@@ -2236,10 +2252,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 2056333208}
+  myArmy: {fileID: 0}
 --- !u!114 &389568124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2327,10 +2343,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 1
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 1771146194}
+  myArmy: {fileID: 0}
 --- !u!114 &450194072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2458,6 +2474,8 @@ MonoBehaviour:
   monthIndex: 2
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &487482335
 GameObject:
   m_ObjectHideFlags: 0
@@ -2631,6 +2649,8 @@ MonoBehaviour:
   monthIndex: 11
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &493987672
 GameObject:
   m_ObjectHideFlags: 0
@@ -2721,6 +2741,8 @@ MonoBehaviour:
   monthIndex: 1
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &510038481
 GameObject:
   m_ObjectHideFlags: 0
@@ -2903,6 +2925,8 @@ MonoBehaviour:
   monthIndex: 4
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &535277518
 GameObject:
   m_ObjectHideFlags: 0
@@ -3101,10 +3125,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 2056333208}
+  myArmy: {fileID: 0}
 --- !u!114 &548017683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3232,6 +3256,8 @@ MonoBehaviour:
   monthIndex: 9
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &563017051
 GameObject:
   m_ObjectHideFlags: 0
@@ -3470,6 +3496,8 @@ MonoBehaviour:
   monthIndex: 6
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &571804803
 GameObject:
   m_ObjectHideFlags: 0
@@ -3594,10 +3622,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 1
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 1771146194}
+  myArmy: {fileID: 0}
 --- !u!114 &579048222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3725,6 +3753,8 @@ MonoBehaviour:
   monthIndex: 12
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &588235845
 GameObject:
   m_ObjectHideFlags: 0
@@ -3815,6 +3845,8 @@ MonoBehaviour:
   monthIndex: 1
   cardFront: {fileID: 2800000, guid: f7f3dd2d5f212c8429a97a383b46b82f, type: 3}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &625870366
 GameObject:
   m_ObjectHideFlags: 0
@@ -3865,10 +3897,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 2056333208}
+  myArmy: {fileID: 0}
 --- !u!114 &625870369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3916,6 +3948,7 @@ GameObject:
   m_Component:
   - component: {fileID: 650265592}
   - component: {fileID: 650265593}
+  - component: {fileID: 650265594}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -3949,9 +3982,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ea4f0f4c43744544964ad0b60cb44af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  phaseNow: 
+  phaseNow: 0
   playerHandDeck: {fileID: 10593172}
   enemyHandDeck: {fileID: 487482337}
+--- !u!114 &650265594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650265591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34dac670f8fd64141ac0d2ae05e11d3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &671763664
 GameObject:
   m_ObjectHideFlags: 0
@@ -4042,6 +4087,8 @@ MonoBehaviour:
   monthIndex: 6
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &692294185
 GameObject:
   m_ObjectHideFlags: 0
@@ -4132,6 +4179,8 @@ MonoBehaviour:
   monthIndex: 3
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &753473511
 GameObject:
   m_ObjectHideFlags: 0
@@ -4222,6 +4271,8 @@ MonoBehaviour:
   monthIndex: 8
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &783200106
 GameObject:
   m_ObjectHideFlags: 0
@@ -4312,6 +4363,8 @@ MonoBehaviour:
   monthIndex: 3
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &787767355
 GameObject:
   m_ObjectHideFlags: 0
@@ -4362,10 +4415,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 1771146194}
+  myArmy: {fileID: 0}
 --- !u!114 &787767358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4453,10 +4506,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 1771146194}
+  myArmy: {fileID: 0}
 --- !u!114 &805173995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4757,10 +4810,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 2056333208}
+  myArmy: {fileID: 0}
 --- !u!114 &840643037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4848,10 +4901,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 2056333208}
+  myArmy: {fileID: 0}
 --- !u!114 &844913900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5013,10 +5066,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 2056333208}
+  myArmy: {fileID: 0}
 --- !u!114 &863865503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5104,10 +5157,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 2056333208}
+  myArmy: {fileID: 0}
 --- !u!114 &879729971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5235,6 +5288,8 @@ MonoBehaviour:
   monthIndex: 5
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &910456688
 GameObject:
   m_ObjectHideFlags: 0
@@ -5397,6 +5452,8 @@ MonoBehaviour:
   monthIndex: 6
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &942668097
 GameObject:
   m_ObjectHideFlags: 0
@@ -5487,6 +5544,8 @@ MonoBehaviour:
   monthIndex: 8
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &948574991
 GameObject:
   m_ObjectHideFlags: 0
@@ -5611,10 +5670,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 2056333208}
+  myArmy: {fileID: 0}
 --- !u!114 &954308214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5702,10 +5761,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 2056333208}
+  myArmy: {fileID: 0}
 --- !u!114 &960478884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5907,6 +5966,8 @@ MonoBehaviour:
   monthIndex: 10
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &992597639
 GameObject:
   m_ObjectHideFlags: 0
@@ -5997,6 +6058,8 @@ MonoBehaviour:
   monthIndex: 11
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &999287594
 GameObject:
   m_ObjectHideFlags: 0
@@ -6047,10 +6110,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 2056333208}
+  myArmy: {fileID: 0}
 --- !u!114 &999287597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6178,6 +6241,8 @@ MonoBehaviour:
   monthIndex: 7
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &1025219117
 GameObject:
   m_ObjectHideFlags: 0
@@ -6228,10 +6293,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 1
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 1771146194}
+  myArmy: {fileID: 0}
 --- !u!114 &1025219120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6433,6 +6498,8 @@ MonoBehaviour:
   monthIndex: 3
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &1093947774
 GameObject:
   m_ObjectHideFlags: 0
@@ -6745,6 +6812,8 @@ MonoBehaviour:
   monthIndex: 4
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &1136346226
 GameObject:
   m_ObjectHideFlags: 0
@@ -6795,10 +6864,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 2056333208}
+  myArmy: {fileID: 0}
 --- !u!114 &1136346229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7069,10 +7138,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 1
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 1771146194}
+  myArmy: {fileID: 0}
 --- !u!114 &1256021208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7431,6 +7500,8 @@ MonoBehaviour:
   monthIndex: 7
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &1290785571
 GameObject:
   m_ObjectHideFlags: 0
@@ -7521,6 +7592,8 @@ MonoBehaviour:
   monthIndex: 8
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &1292830279
 GameObject:
   m_ObjectHideFlags: 0
@@ -7611,6 +7684,8 @@ MonoBehaviour:
   monthIndex: 10
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &1298563663
 GameObject:
   m_ObjectHideFlags: 0
@@ -7661,10 +7736,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 2056333208}
+  myArmy: {fileID: 0}
 --- !u!114 &1298563666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7752,10 +7827,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 1
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 1771146194}
+  myArmy: {fileID: 0}
 --- !u!114 &1310148372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7957,6 +8032,8 @@ MonoBehaviour:
   monthIndex: 4
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &1333336067
 GameObject:
   m_ObjectHideFlags: 0
@@ -8007,10 +8084,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 1771146194}
+  myArmy: {fileID: 0}
 --- !u!114 &1333336070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8138,6 +8215,8 @@ MonoBehaviour:
   monthIndex: 12
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &1379706803
 GameObject:
   m_ObjectHideFlags: 0
@@ -8188,10 +8267,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 1
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 1771146194}
+  myArmy: {fileID: 0}
 --- !u!114 &1379706806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8393,6 +8472,8 @@ MonoBehaviour:
   monthIndex: 9
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &1524563789
 GameObject:
   m_ObjectHideFlags: 0
@@ -8443,10 +8524,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 1
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 1771146194}
+  myArmy: {fileID: 0}
 --- !u!114 &1524563792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8574,6 +8655,8 @@ MonoBehaviour:
   monthIndex: 7
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &1588035513
 GameObject:
   m_ObjectHideFlags: 0
@@ -8664,6 +8747,8 @@ MonoBehaviour:
   monthIndex: 2
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &1620185512
 GameObject:
   m_ObjectHideFlags: 0
@@ -8828,6 +8913,8 @@ MonoBehaviour:
   monthIndex: 11
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &1655123772
 GameObject:
   m_ObjectHideFlags: 0
@@ -8878,10 +8965,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 2056333208}
+  myArmy: {fileID: 0}
 --- !u!114 &1655123775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9043,10 +9130,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 2056333208}
+  myArmy: {fileID: 0}
 --- !u!114 &1671321648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9134,10 +9221,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 1771146194}
+  myArmy: {fileID: 0}
 --- !u!114 &1684863587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9265,6 +9352,8 @@ MonoBehaviour:
   monthIndex: 1
   cardFront: {fileID: 2800000, guid: d3a3638067ec6f64297857b9fd72a256, type: 3}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &1700164822
 GameObject:
   m_ObjectHideFlags: 0
@@ -9315,10 +9404,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 1771146194}
+  myArmy: {fileID: 0}
 --- !u!114 &1700164825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9406,10 +9495,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 1
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 1771146194}
+  myArmy: {fileID: 0}
 --- !u!114 &1701588719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9537,6 +9626,8 @@ MonoBehaviour:
   monthIndex: 10
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &1727471644
 GameObject:
   m_ObjectHideFlags: 0
@@ -9587,10 +9678,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 2056333208}
+  myArmy: {fileID: 0}
 --- !u!114 &1727471647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9678,10 +9769,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 2056333208}
+  myArmy: {fileID: 0}
 --- !u!114 &1728570870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9899,6 +9990,8 @@ MonoBehaviour:
   monthIndex: 9
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &1790619940
 GameObject:
   m_ObjectHideFlags: 0
@@ -10023,10 +10116,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 1
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 1771146194}
+  myArmy: {fileID: 0}
 --- !u!114 &1792791560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10114,10 +10207,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 1771146194}
+  myArmy: {fileID: 0}
 --- !u!114 &1803364045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10245,6 +10338,8 @@ MonoBehaviour:
   monthIndex: 4
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &1812953251
 GameObject:
   m_ObjectHideFlags: 0
@@ -10335,6 +10430,8 @@ MonoBehaviour:
   monthIndex: 7
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &1818262002
 GameObject:
   m_ObjectHideFlags: 0
@@ -10385,10 +10482,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 2056333208}
+  myArmy: {fileID: 0}
 --- !u!114 &1818262005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10516,6 +10613,8 @@ MonoBehaviour:
   monthIndex: 12
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &1855024754
 GameObject:
   m_ObjectHideFlags: 0
@@ -10606,6 +10705,8 @@ MonoBehaviour:
   monthIndex: 3
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &1877904996
 GameObject:
   m_ObjectHideFlags: 0
@@ -10656,10 +10757,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 2056333208}
+  myArmy: {fileID: 0}
 --- !u!114 &1877904999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10895,10 +10996,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 2056333208}
+  myArmy: {fileID: 0}
 --- !u!114 &1917855502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11060,10 +11161,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 1
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 1771146194}
+  myArmy: {fileID: 0}
 --- !u!114 &1925943884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11151,10 +11252,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 1771146194}
+  myArmy: {fileID: 0}
 --- !u!114 &1926042919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11282,6 +11383,8 @@ MonoBehaviour:
   monthIndex: 5
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &1956974669
 GameObject:
   m_ObjectHideFlags: 0
@@ -11372,6 +11475,8 @@ MonoBehaviour:
   monthIndex: 2
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &1970389974
 GameObject:
   m_ObjectHideFlags: 0
@@ -11636,10 +11741,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 1
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 1771146194}
+  myArmy: {fileID: 0}
 --- !u!114 &2022330179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11727,10 +11832,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 1
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 1771146194}
+  myArmy: {fileID: 0}
 --- !u!114 &2032435823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11954,6 +12059,8 @@ MonoBehaviour:
   monthIndex: 5
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &2056096163
 GameObject:
   m_ObjectHideFlags: 0
@@ -12044,6 +12151,8 @@ MonoBehaviour:
   monthIndex: 5
   cardFront: {fileID: 0}
   cardBack: {fileID: 2800000, guid: 219131eb52979c543bdff02e38212bd3, type: 3}
+  enemyArmy: {fileID: 0}
+  playerArmy: {fileID: 0}
 --- !u!1 &2056333205
 GameObject:
   m_ObjectHideFlags: 0
@@ -12184,10 +12293,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 1771146194}
+  myArmy: {fileID: 0}
 --- !u!114 &2060757724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12349,10 +12458,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 1771146194}
+  myArmy: {fileID: 0}
 --- !u!114 &2133159139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12514,10 +12623,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018020b7e60fc554d9683c38ebadd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monthIndex: 0
   cardFront: {fileID: 0}
   cardBack: {fileID: 0}
   myHandList: {fileID: 2056333208}
+  myArmy: {fileID: 0}
 --- !u!114 &2147240722
 MonoBehaviour:
   m_ObjectHideFlags: 0

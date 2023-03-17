@@ -23,6 +23,8 @@ public class Army : MonoBehaviour
     [SerializeField] Text txtHealth;
     int nHealth;
 
+    bool isPlayer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -104,6 +106,7 @@ public class Army : MonoBehaviour
             newPos.x--;
             soliders[i].transform.DOMove(pos[posIndex].position, 0.1f).OnComplete(() =>
             {
+                UpdateAtk();
                 BattleManager.i.StartPhase_Settle();
             });
 
@@ -117,6 +120,30 @@ public class Army : MonoBehaviour
         {
             newAtk+=team.soliders.Count;
         }
+        nAtk = newAtk;
+        txtAtk.text = nAtk.ToString();
     }
 
+    public void Attack(Army otherArmy)
+    {
+        otherArmy.GetHurt(nAtk);
+    }
+
+    public void GetHurt(int nDamage)
+    {
+        int newHealth = nHealth;
+        newHealth -= nDamage;
+        if(newHealth < 0)
+        {
+            newHealth = 0;
+            nHealth = newHealth;
+            txtHealth.text = nHealth.ToString();
+            BattleManager.i.GameOver(isPlayer);
+        }
+        else
+        {
+            nHealth = newHealth;
+            txtHealth.text = nHealth.ToString();
+        }
+    }
 }

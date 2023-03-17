@@ -66,6 +66,14 @@ public class BattleManager : MonoBehaviour
         phaseNow = phase.Action;
     }
 
+    public void GameOver(bool isPlayerWin)
+    {
+        if (isPlayerWin)
+            Debug.Log("PlayerWin");
+        else
+            Debug.Log("PlayerLose");
+    }
+
     public phase GetPhaseNow()
     {
         return phaseNow;

@@ -8,7 +8,6 @@ using UnityEngine.UI;
 
 public class HandCard : MonoBehaviour
 {
-    [SerializeField] int monthIndex;
     [SerializeField] Texture cardFront;
     [SerializeField] Texture cardBack;
     EventTrigger et;
@@ -24,6 +23,7 @@ public class HandCard : MonoBehaviour
     int id = -1;
     bool needToSelect = false;
     bool addArmy = false;
+    int monthIndex = -1;
     bool finishAction = true;
 
     void Awake()
@@ -56,6 +56,11 @@ public class HandCard : MonoBehaviour
     {
         mat.SetTexture("_Front", cardFront);
         mat.SetTexture("_Back", cardBack);
+    }
+
+    public void InitCard(int idIndex)
+    {
+        id = idIndex;
     }
     
     public void MoveTo(Vector3 position,Vector3 scale,bool rotate)
