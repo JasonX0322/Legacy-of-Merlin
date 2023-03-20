@@ -10,6 +10,13 @@ public class BattleManager : MonoBehaviour
     [SerializeField] HandDeck playerHandDeck;
     [SerializeField] HandDeck enemyHandDeck;
 
+    [SerializeField] HandCard[] playerHandCard;
+    [SerializeField] HandCard[] enemyHandCard;
+
+    //TODO
+    [SerializeField] string[] tempPlayerCardIndex;
+    [SerializeField] string[] tempEnemyCardIndex;
+
     public static BattleManager i;
 
     bool isPlayerAction;
@@ -30,6 +37,18 @@ public class BattleManager : MonoBehaviour
 
     void Start()
     {
+        //读表
+        ReadCSV.i.StartReadCSV();
+        //初始化手牌
+        for(int i=0;i!=playerHandCard.Length;i++)
+        {
+            playerHandCard[i].InitCard(tempPlayerCardIndex[i]);
+        }
+        for (int i = 0; i != enemyHandCard.Length; i++)
+        {
+            enemyHandCard[i].InitCard(tempEnemyCardIndex[i]);
+        }
+        //开始发牌
         StartPhase_Dealing();
     }
 

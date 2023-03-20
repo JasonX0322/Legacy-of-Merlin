@@ -8,8 +8,6 @@ using UnityEngine.UI;
 
 public class HandCard : MonoBehaviour
 {
-    [SerializeField] Texture cardFront;
-    [SerializeField] Texture cardBack;
     EventTrigger et;
     Material mat;
     Image img;
@@ -20,11 +18,26 @@ public class HandCard : MonoBehaviour
     [SerializeField] Army myArmy;
 
     //属性
-    int id = -1;
-    bool needToSelect = false;
-    bool addArmy = false;
-    int monthIndex = -1;
-    bool finishAction = true;
+    string index = "-1";
+    public struct CardParam
+    {
+        public string name;
+        public int month;
+        public string skillIndex;
+        public string frontImg;
+        public string backImg;
+    }
+
+    public struct SkillParam
+    {
+        public string name;
+        public bool needToSelect;
+        public bool addArmy;
+        public bool finishAction;
+    }
+
+    CardParam myCardParam;
+    SkillParam mySkillParam;
 
     void Awake()
     {
@@ -54,15 +67,20 @@ public class HandCard : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        mat.SetTexture("_Front", cardFront);
-        mat.SetTexture("_Back", cardBack);
+        Texture texFront = Resources.Load<Texture>(myCardParam.frontImg);
+        Texture texBack = Resources.Load<Texture>(myCardParam.backImg);
+        mat.SetTexture("_Front", texFront);
+        mat.SetTexture("_Back", texBack);
     }
 
-    public void InitCard(int idIndex)
+    public void InitCard(string idIndex)
     {
-        id = idIndex;
+        index = idIndex;
+        myCardParam = ReadCSV.i.GetCardParam(index);
+        mySkillParam = ReadCSV.i.GetSkillParam(myCardParam.skillIndex);
+
     }
-    
+
     public void MoveTo(Vector3 position,Vector3 scale,bool rotate)
     {
         transform.DOMove(position, 1);
@@ -83,13 +101,13 @@ public class HandCard : MonoBehaviour
                 myHandList.SetSelectedCard(this.gameObject);
                 myHandList.ResetCards(this.gameObject);
                 clicked = true;
-                GroundCardList.i.FindSameMonthGround(monthIndex);
+                GroundCardList.i.FindSameMonthGround(myCardParam.month);
                 transform.DOScale(Vector3.one * 1.2f, 0.1f);
                 mat.SetColor("_OutlineColor", Color.yellow);
                 mat.SetFloat("_OutlineAlpha", 1);
                 myHandList.SetClicked(true);
 
-                if(needToSelect)
+                if(mySkillParam.needToSelect)
                 {
                     mat.SetColor("_OutlineColor", Color.red);
                     myArmy.StartSelect();
@@ -115,7 +133,7 @@ public class HandCard : MonoBehaviour
         if (isPlayer)
         {
             Debug.Log("Pointer Enter");
-            GroundCardList.i.FindSameMonthGround(monthIndex);
+            GroundCardList.i.FindSameMonthGround(myCardParam.month);
             transform.DOScale(Vector3.one * 1.2f, 0.1f);
             mat.SetColor("_OutlineColor", Color.yellow);
             mat.SetFloat("_OutlineAlpha", 1);
@@ -165,7 +183,7 @@ public class HandCard : MonoBehaviour
 
     public int GetMonth()
     {
-        return monthIndex;
+        return myCardParam.month;
     }
 
 }

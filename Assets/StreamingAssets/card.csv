@@ -1,2 +1,2 @@
-index,name,skillIndex,frontImg,backImg
-1,name1,1,front1,back1
+index,name,Month,SkillIndex,FrontImg,BackImg
+0000,test,1,0001,testFront,testBack
