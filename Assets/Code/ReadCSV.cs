@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using static HandCard;
+using static EnemyAI;
 using System.Reflection;
 
 public class ReadCSV : MonoBehaviour
@@ -22,7 +23,7 @@ public class ReadCSV : MonoBehaviour
 
     }
 
-    public void StartReadCSV()
+    public void ReadCardandSkill()
     {
         card = Read("card");
         skill = Read("skill");
@@ -30,6 +31,7 @@ public class ReadCSV : MonoBehaviour
 
     public CardParam GetCardParam(string index)
     {
+        //Debug.Log(index);
         int cardIndex = -1;
         CardParam cardParam = new CardParam();
         for (int i = 0; i != card.Count; i++)
@@ -42,8 +44,10 @@ public class ReadCSV : MonoBehaviour
         }
         if (cardIndex == -1)
             Debug.LogWarning("没有找到牌");
+        cardParam.index = card[cardIndex][0];
+        cardParam.name = card[cardIndex][1];
         cardParam.month = int.Parse(card[cardIndex][2]);
-        cardParam.skillIndex = card[cardIndex][3];
+        cardParam.skillIndex = card[cardIndex][3].Split(',');
         cardParam.frontImg = card[cardIndex][4];
         cardParam.backImg = card[cardIndex][5];
         return cardParam;
@@ -62,13 +66,30 @@ public class ReadCSV : MonoBehaviour
             }
         }
         if (skillIndex == -1)
-            Debug.LogWarning("没有找到牌");
-        skillParam.name = card[skillIndex][1];
-        skillParam.needToSelect = TurnToTureFalse(card[skillIndex][2]);
-        skillParam.addArmy = TurnToTureFalse(card[skillIndex][3]);
-        skillParam.finishAction = TurnToTureFalse(card[skillIndex][4]);
+            Debug.LogWarning("没有找到技能");
+        skillParam.index = skill[skillIndex][0];
+        skillParam.name = skill[skillIndex][1];
+        skillParam.effectIntro = skill[skillIndex][2];
+        skillParam.selectGroundCard = TurnToTureFalse(skill[skillIndex][3]);
+        skillParam.selectArmySoldier = TurnToTureFalse(skill[skillIndex][4]);
+        skillParam.addArmy = TurnToTureFalse(skill[skillIndex][5]);
+        skillParam.finishAction = TurnToTureFalse(skill[skillIndex][6]);
         return skillParam;
 
+    }
+
+    public AICard[] GetEnemyAI(string name)
+    {
+        List<string[]> aiCardList = Read(name);
+        AICard[] aiCardArray = new AICard[aiCardList.Count];
+        for(int i=0;i!=aiCardList.Count;i++)
+        {
+            AICard aiCard = new AICard();
+            aiCard.cardIndex = aiCardList[i][0];
+            aiCard.cardPriority = int.Parse(aiCardList[i][1]);
+            aiCardArray[i] = aiCard;
+        }
+        return aiCardArray;
     }
 
     bool TurnToTureFalse(string str)
@@ -86,10 +107,19 @@ public class ReadCSV : MonoBehaviour
         List<string[]> csvData = new List<string[]>();
         StreamReader sr = new StreamReader(path);
         string line;
+
+        bool firstLine=true;
+
         while ((line = sr.ReadLine()) != null)
         {
+            if(firstLine)
+            {
+                firstLine = false;
+                continue;
+            }
             string[] rowData = line.Split(',');
             csvData.Add(rowData);
+            //Debug.Log(rowData[0]);
         }
         sr.Close();
         return csvData;

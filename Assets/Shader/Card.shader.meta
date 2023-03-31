@@ -4,6 +4,8 @@ ShaderImporter:
   externalObjects: {}
   defaultTextures:
   - _Outline: {fileID: 2800000, guid: cac139a2ff183c44e80b9dcf8e34e01f, type: 3}
+  - _Front: {fileID: 2800000, guid: d3a3638067ec6f64297857b9fd72a256, type: 3}
+  - _Back: {fileID: 2800000, guid: f7f3dd2d5f212c8429a97a383b46b82f, type: 3}
   nonModifiableTextures: []
   userData: 
   assetBundleName: 

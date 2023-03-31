@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class GroundCard : MonoBehaviour
+public class GroundCard : Card
 {
     [SerializeField] int monthIndex;
     [SerializeField] Texture cardFront;
@@ -14,8 +14,6 @@ public class GroundCard : MonoBehaviour
     Material mat;
     [SerializeField] Army enemyArmy;
     [SerializeField] Army playerArmy;
-
-    bool clickable;
     void Awake()
     {
         et = gameObject.AddComponent<EventTrigger>();
@@ -47,19 +45,18 @@ public class GroundCard : MonoBehaviour
         mat.SetTexture("_Front",cardFront);
         mat.SetTexture("_Back",cardBack);
     }
-    public void MoveTo(Vector3 position, Vector3 scale, bool rotate = false)
+    public void MoveTo(Vector3 position, Vector3 scale, bool ratateToFront = true)
     {
         transform.DOMove(position, 1);
-        if (rotate)
+        if (ratateToFront)
         {
-            transform.DORotate(new Vector3(0, 180, 0), 1.0f);
+            transform.DORotate(new Vector3(0, 0, 0), 1.0f);
         }
     }
 
     public void ResetCard()
     {
         mat.SetFloat("_OutlineAlpha", 0);
-        clickable = false;
     }
 
     public int GetMonth()
@@ -74,29 +71,33 @@ public class GroundCard : MonoBehaviour
     // Pointer Click事件响应函数
     void OnPointerClickDelegate(PointerEventData data)
     {
-        if (clickable && BattleManager.i.GetPhaseNow() == BattleManager.phase.Selecting)
-        {
-            playerArmy.SelectSolider(this.gameObject);
-            playerArmy.FinishSelect();
-        }
+        if (!clickable)
+            return;
+        playerArmy.AddSoldier(this.gameObject);
+        GroundCardList.i.RemoveFromList(this.gameObject);
+        playerArmy.SelectOver();
+    }
+
+    public void AI_SelectEvent()
+    {
+        GroundCardList.i.RemoveFromList(this.gameObject);
+        enemyArmy.AddSoldier(this.gameObject);
+        enemyArmy.SelectOver();
     }
 
     // Pointer Enter事件响应函数
     void OnPointerEnterDelegate(PointerEventData data)
     {
-        if (clickable)
-            transform.DOScale(Vector3.one * 1.2f, 0.1f);
+        if (!interactable)
+            return;
+        transform.DOScale(Vector3.one * 1.2f, 0.1f);
     }
 
     // Pointer Exit事件响应函数
     void OnPointerExitDelegate(PointerEventData data)
     {
-        if (clickable)
-            transform.DOScale(Vector3.one, 0.1f);
-    }
-
-    public void SetClickable(bool bClickable)
-    {
-        clickable = bClickable;
+        if (!interactable)
+            return;
+        transform.DOScale(Vector3.one, 0.1f);
     }
 }

@@ -51,26 +51,31 @@ public class HandDeck : MonoBehaviour
         }
     }
 
-    public void DealCards(int count)
+    public void DealCards()
     {
         if (cardPointer < 0)
         {
             Debug.LogWarning("无牌可发");
             return;
         }
-        StartCoroutine(ienuDealCards(count));
+        StartCoroutine(ienuDealCards());
     }
 
-    IEnumerator ienuDealCards(int count)
+    IEnumerator ienuDealCards()
     {
+        int count=myHandList.GetEmptyBlockCount();
         for (int i = 0; i < count; i++)
         {
-            Vector3 targetPos = myHandList.GetEmptyPos();
-            groundedCardList[cardPointer].GetComponent<HandCard>().MoveTo(targetPos, Vector3.one, isPlayer);
-            if (isPlayer)
-                myHandList.AddList(groundedCardList[cardPointer]);
+            myHandList.AddCard(groundedCardList[cardPointer]);
             cardPointer--;
             yield return new WaitForSeconds(0.5f);
+        }
+        if (isPlayer)
+        {
+            foreach (var item in groundedCardList)
+            {
+                item.GetComponent<Card>().SetInteractable(true);
+            }
         }
     }
 }

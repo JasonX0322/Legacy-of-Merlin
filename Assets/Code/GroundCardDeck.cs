@@ -9,6 +9,7 @@ public class GroundCardDeck : MonoBehaviour
     List<GameObject> groundedCardList=new List<GameObject>();
     int cardPointer;
     public static GroundCardDeck i;
+    [SerializeField] GroundCardList groundCardList;
 
     void Awake()
     {
@@ -50,22 +51,23 @@ public class GroundCardDeck : MonoBehaviour
         }
     }
 
-    public void DealCards(int count)
+    public void DealCards()
     {
-        if(cardPointer<0)
-        {
-            Debug.LogWarning("无牌可发");
-            return;
-        }
-        StartCoroutine(ienuDealCards(count));
+        StartCoroutine(ienuDealCards());
     }
 
-    IEnumerator ienuDealCards(int count)
+    IEnumerator ienuDealCards()
     {
+        int count = groundCardList.GetEmptyBlockCount();
         for (int i = 0; i < count; i++)
         {
-            Vector3 targetPos=GroundCardList.i.GetEmptyPos();
-            groundedCardList[cardPointer].GetComponent<GroundCard>().MoveTo(targetPos, Vector3.one, true);
+            if (cardPointer < 0)
+            {
+                Debug.LogWarning("无牌可发");
+                yield break;
+            }
+            //Vector3 targetPos=GroundCardList.i.GetEmptyPos();
+            //groundedCardList[cardPointer].GetComponent<GroundCard>().MoveTo(targetPos, Vector3.one, true);
             GroundCardList.i.AddList(groundedCardList[cardPointer]);
             cardPointer--;
             yield return new WaitForSeconds(0.5f);
